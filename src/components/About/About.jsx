@@ -1,5 +1,5 @@
 import './About.css';
-import portImage from '../../assets/port.jpg';  // Replace with your image
+
 import { NavLink } from 'react-router-dom';
 export default function About() {
   return (
@@ -14,7 +14,7 @@ export default function About() {
 
       <section className="about-content">
         <div className="about-image">
-          <img src={portImage} alt="Profile"/>
+          <img src='/port.jpg' alt="Profile"/>
         </div>
         <div className="about-details">
           <h2>My Journey</h2>

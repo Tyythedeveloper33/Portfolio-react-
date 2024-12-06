@@ -4,22 +4,22 @@ import './Portfolio.css';
 // Sample project data (replace with your own projects)
 const projects = [
   {
-    title: 'Project 1',
+    title: 'EduBnB',
     description: 'A description of the project, the technologies used, and its functionality.',
-    image: 'https://via.placeholder.com/400x300',
-    link: 'https://example.com/project1',
+    image: '/Edubnb.png',
+    link: 'https://grounded-project.onrender.com/',
   },
   {
-    title: 'Project 2',
+    title: 'Space Continuum',
     description: 'Another project showcasing my skills in front-end development with React.',
-    image: 'https://via.placeholder.com/400x300',
+    image: '/Space-continuum.png',
     link: 'https://example.com/project2',
   },
   {
-    title: 'Project 3',
+    title: 'UFree',
     description: 'A full-stack application I built with Node.js, Express, and MongoDB.',
-    image: 'https://via.placeholder.com/400x300',
-    link: 'https://example.com/project3',
+    image: '/ufree.png',
+    link: 'https://ufree-f24a66c626ea.herokuapp.com/',
   },
 ];
 
