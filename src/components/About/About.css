@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9fc;
+    color: #333;
+  }
+
+  /* About Container */
+  .about-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  /* About Header */
+  .about-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .about-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .about-header p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+  }
+
+  /* About Content */
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .about-image {
+    max-width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* About Details */
+  .about-details {
+    text-align: center;
+    max-width: 800px;
+  }
+
+  .about-details h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .about-details p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .about-details h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .about-details ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-details ul li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+  }
+
+  .about-details ul li:hover {
+    color: #1e90ff;
+  }
+
+  /* Contact Button */
+  .btn-contact {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #1e90ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-contact:hover {
+    background-color: #007bff;
+  }
+
+  /* About Footer */
+  .about-footer {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+  }
