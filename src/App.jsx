@@ -9,6 +9,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Navigation from './components/navigation'; // Assuming you have this component
+import Footer from './components/Footer';
 
 // Layout component that includes the Navigation
 function Layout() {
@@ -16,6 +17,8 @@ function Layout() {
     <div>
       <Navigation />
       <Outlet /> {/* This renders the nested route's component */}
+      <Footer/>
+
     </div>
   );
 }
@@ -43,7 +46,7 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+], { basename: '/Portfolio-react-' });
 
 // App component that renders the RouterProvider
 function App() {

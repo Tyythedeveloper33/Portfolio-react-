@@ -6,19 +6,19 @@ const projects = [
   {
     title: 'EduBnB',
     description: 'A description of the project, the technologies used, and its functionality.',
-    image: '/Edubnb.png',
+    image: 'Edubnb.png',
     link: 'https://grounded-project.onrender.com/',
   },
   {
     title: 'Space Continuum',
     description: 'Another project showcasing my skills in front-end development with React.',
-    image: '/Space-continuum.png',
+    image: 'Space-continuum.png',
     link: 'https://example.com/project2',
   },
   {
     title: 'UFree',
     description: 'A full-stack application I built with Node.js, Express, and MongoDB.',
-    image: '/ufree.png',
+    image: 'ufree.png',
     link: 'https://ufree-f24a66c626ea.herokuapp.com/',
   },
 ];

@@ -1,0 +1,94 @@
+/* Footer container styles */
+.footer-container {
+    background-color: #333;  /* Dark background */
+    color: white;  /* Light text color */
+    padding: 20px;
+    position: relative;
+    width: 100vw;  /* Ensures full width of the viewport */
+    left: 0;  /* Aligns the footer with the left edge */
+    bottom: 0;
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding doesn't affect the layout */
+    margin-top: 40px; /* Prevents overlap with other content */
+  }
+
+  /* Ensures footer content is properly aligned */
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;  /* Adds space between sections */
+    text-align: center;
+  }
+
+  /* Social icons section */
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Styles for social media images/icons */
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .social-icons img:hover {
+    transform: scale(1.1);  /* Enlarges the icon on hover */
+    opacity: 0.8;  /* Slight opacity change for hover effect */
+  }
+
+  /* Contact info section */
+  .contact-info {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  /* Link styles */
+  .link {
+    text-decoration: none;  /* Remove underline from links */
+  }
+
+  .link:hover {
+    opacity: 0.8;  /* Slight opacity change on hover */
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+
+    .social-icons {
+      gap: 15px;  /* Adjust space between icons */
+    }
+
+    .contact-info {
+      font-size: 14px;  /* Adjust font size on smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-container {
+      padding: 15px;  /* Adjust padding for smaller screens */
+    }
+
+    .social-icons img {
+      width: 30px;  /* Smaller icons on very small screens */
+      height: 30px;
+    }
+
+    .contact-info {
+      font-size: 12px;  /* Even smaller font size for extra small screens */
+    }
+  }
