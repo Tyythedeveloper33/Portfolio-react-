@@ -1,6 +1,6 @@
 import './About.css';
-
 import { NavLink } from 'react-router-dom';
+
 export default function About() {
   return (
     <div className="about-container">
@@ -14,7 +14,7 @@ export default function About() {
 
       <section className="about-content">
         <div className="about-image">
-          <img src='/port.jpg' alt="Profile"/>
+          <img src='/port.jpg' alt="Profile" />
         </div>
         <div className="about-details">
           <h2>My Journey</h2>
@@ -25,15 +25,54 @@ export default function About() {
           </p>
 
           <h3>Skills & Expertise</h3>
-          <ul>
-            <li>Frontend Development: React, HTML5, CSS3, JavaScript (ES6+)</li>
-            <li>Backend Development: Node.js, Express.js</li>
-            <li>Version Control: Git, GitHub</li>
-            <li>Responsive Design & User Experience</li>
-            <li>Problem Solving & Collaboration</li>
-          </ul>
-       <NavLink to='/contact' className='btn-contact'>Let's Connect</NavLink>
+          <div className="skills-container">
+            <section className="skill-category">
+              <h3>Frontend Development:</h3>
+              <div className="slider-container">
+                <div className="skill-icons shift-left">
+                  <img src="/atom.png" alt="React Icon" />
+                  <img src="/html5.png" alt="HTML5 Icon" />
+                  <img src="/css.png" alt="CSS Icon" />
+                  <img src="/js.png" alt="JavaScript Icon" />
+                  <img src="/redux.svg" alt="Redux Icon" />
+                  <img src="/bootstrap.svg" alt="Bootstrap Icon" />
+                  <img src="/axios-ar21.svg" alt="Axios Icon" />
+                </div>
+              </div>
+            </section>
+            <section className="skill-category">
+              <h3>Backend Development:</h3>
+              <div className="slider-container">
+                <div className="skill-icons shift-right">
+                  <img src="/express.svg" alt="Express Icon" />
+                  <img src="/nodejs.svg" alt="Node.js Icon" />
+                  <img src="/python.svg" alt="Python Icon" />
+                  <img src="/postgres.svg" alt="PostgreSQL Icon" />
+                  <img src="/mongodb.svg" alt="MongoDB Icon" />
+                </div>
+              </div>
+            </section>
+            <section className="skill-category">
+              <h3>Testing:</h3>
+              <div className="slider-container">
+                <div className="skill-icons shift-left">
+                  <img src="/mocha.svg" alt="Mocha Icon" />
+                  <img src="/jest.svg" alt="Jest Icon" />
+                </div>
+              </div>
+            </section>
+            <section className="skill-category">
+              <h3>Other Tools:</h3>
+              <div className="slider-container">
+                <div className="skill-icons shift-right">
+                  <img src="/docker.svg" alt="Docker Icon" />
+                  <img src="/aws.svg" alt="AWS Icon" />
+                </div>
+              </div>
+            </section>
+          </div>
 
+          <NavLink to='/contact' className='btn-contact'>Let's Connect</NavLink>
         </div>
       </section>
 

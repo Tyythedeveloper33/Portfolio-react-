@@ -3,110 +3,167 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  body {
+body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f7f9fc;
     color: #333;
-  }
+}
 
-  /* About Container */
-  .about-container {
+/* About Container */
+.about-container {
     max-width: 1200px;
     margin: 50px auto;
     padding: 30px;
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  /* About Header */
-  .about-header {
+/* About Header */
+.about-header {
     text-align: center;
     margin-bottom: 40px;
-  }
+}
 
-  .about-header h1 {
+.about-header h1 {
     font-size: 36px;
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
-  }
+}
 
-  .about-header p {
+.about-header p {
     font-size: 18px;
     color: #666;
     margin-top: 10px;
-  }
+}
 
-  /* About Content */
-  .about-content {
+/* About Content */
+.about-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     margin-bottom: 40px;
-  }
+}
 
-  .about-image {
+/* About Image */
+.about-image {
     max-width: 250px;
-    border-radius: 10px;
+    border-radius: 50%; /* Circular image */
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .about-image img {
+.about-image img {
     width: 100%;
     height: auto;
     object-fit: cover;
-  }
+}
 
-  /* About Details */
-  .about-details {
+/* About Details */
+.about-details {
     text-align: center;
     max-width: 800px;
-  }
+}
 
-  .about-details h2 {
+.about-details h2 {
     font-size: 28px;
     color: #333;
     margin-bottom: 20px;
-  }
+}
 
-  .about-details p {
+.about-details p {
     font-size: 18px;
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
-  }
+}
 
-  .about-details h3 {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 10px;
-  }
+/* Skills Section */
+.skills-container {
+    margin-top: 40px;
+}
 
-  .about-details ul {
-    list-style: none;
-    padding-left: 0;
+.skill-category {
+    margin-bottom: 30px;
+}
+
+.skill-category h3 {
+    text-align: center;
+    font-size: 24px;
     margin-bottom: 20px;
-  }
+    color: #333;
+}
 
-  .about-details ul li {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 8px;
-    transition: color 0.3s ease;
-  }
+.slider-container {
+    overflow: hidden; /* Prevent images from escaping */
+    position: relative;
+    height: 120px; /* Matches the icon height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-  .about-details ul li:hover {
-    color: #1e90ff;
-  }
+.skill-icons {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 
-  /* Contact Button */
-  .btn-contact {
+.skill-icons img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.skill-icons img:hover {
+    transform: scale(1.1);
+}
+
+.shift-left {
+    animation-name: slideLeft;
+}
+
+.shift-right {
+    animation-name: slideRight;
+}
+
+/* Sliding Animation */
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Contact Button */
+.btn-contact {
     display: inline-block;
     padding: 10px 20px;
     font-size: 18px;
@@ -114,16 +171,44 @@
     color: white;
     text-decoration: none;
     border-radius: 25px;
-    transition: background-color 0.3s ease;
-  }
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
-  .btn-contact:hover {
+.btn-contact:hover {
     background-color: #007bff;
-  }
+    transform: scale(1.05);
+}
 
-  /* About Footer */
-  .about-footer {
+/* About Footer */
+.about-footer {
     text-align: center;
     font-size: 16px;
     color: #777;
-  }
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-image {
+        max-width: 200px;
+    }
+
+    .about-details ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skill-icons img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .slider-container {
+        height: 100px; /* Adjust for smaller icons */
+    }
+}
