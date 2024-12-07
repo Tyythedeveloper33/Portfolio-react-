@@ -63,7 +63,7 @@ export default function Portfolio() {
               <h2>{project.title}</h2>
               <p>{project.description}</p>
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn-view-project">
-                View Project
+                Coming Soon!!
               </a>
             </div>
           </div>
