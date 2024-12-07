@@ -1,25 +1,36 @@
-/* Footer container styles */
-.footer-container {
+/* Reset any body or container padding/margin that might cause issues */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* Footer container styles */
+  .footer-container {
     background-color: #333;  /* Dark background */
     color: white;  /* Light text color */
     padding: 20px;
-    position: relative;
-    width: 100vw;  /* Ensures full width of the viewport */
-    left: 0;  /* Aligns the footer with the left edge */
+    width: 100%;  /* Ensures full width of the viewport */
+    left: 0;  /* Aligns the footer to the left side of the screen */
     bottom: 0;
     text-align: center;
     box-sizing: border-box; /* Ensures padding doesn't affect the layout */
-    margin-top: 40px; /* Prevents overlap with other content */
+    margin-top: 40px; /* Space from content above */
+    position: relative;
+    overflow: hidden; /* Prevents any overflow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  /* Ensures footer content is properly aligned */
+  /* Footer content (social icons and contact info) */
   .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;  /* Adds space between sections */
-    text-align: center;
+    gap: 15px;
+    width: 100%;  /* Ensures content is fully aligned with the footer */
   }
 
   /* Social icons section */
@@ -28,9 +39,10 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
   }
 
-  /* Styles for social media images/icons */
+  /* Social media icons */
   .social-icons img {
     width: 35px;
     height: 35px;
@@ -38,57 +50,58 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
+  /* Hover effect for social media icons */
   .social-icons img:hover {
-    transform: scale(1.1);  /* Enlarges the icon on hover */
-    opacity: 0.8;  /* Slight opacity change for hover effect */
+    transform: scale(1.1);  /* Slightly enlarges the icons */
+    opacity: 0.8;  /* Slight opacity change */
   }
 
   /* Contact info section */
   .contact-info {
     font-size: 16px;
-    margin-top: 10px;
+    text-align: center;
   }
 
   .contact-info p {
     margin: 5px 0;
-    font-size: 14px;
   }
 
   /* Link styles */
   .link {
-    text-decoration: none;  /* Remove underline from links */
+    text-decoration: none;
+    color: inherit;  /* Inherit the color of the parent */
   }
 
   .link:hover {
-    opacity: 0.8;  /* Slight opacity change on hover */
+    opacity: 0.8;
   }
 
-  /* Responsive Design */
+  /* Responsive Design for smaller screens */
   @media (max-width: 768px) {
     .footer-content {
       flex-direction: column;
     }
 
     .social-icons {
-      gap: 15px;  /* Adjust space between icons */
+      gap: 15px;
     }
 
     .contact-info {
-      font-size: 14px;  /* Adjust font size on smaller screens */
+      font-size: 14px;
     }
   }
 
   @media (max-width: 480px) {
     .footer-container {
-      padding: 15px;  /* Adjust padding for smaller screens */
+      padding: 15px;
     }
 
     .social-icons img {
-      width: 30px;  /* Smaller icons on very small screens */
+      width: 30px;
       height: 30px;
     }
 
     .contact-info {
-      font-size: 12px;  /* Even smaller font size for extra small screens */
+      font-size: 12px;
     }
   }

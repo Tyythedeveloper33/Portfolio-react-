@@ -7,8 +7,9 @@ export default function About() {
       <section className="about-header">
         <h1>About Me</h1>
         <p>
-          Hello! I'm a passionate developer who loves solving problems and building great things.
-          I aim to create beautiful, functional, and intuitive digital experiences.
+        Hey! I’m a 23-year-old developer who loves building things that look good and work even better. I’m all about creating clean, simple designs that are easy for everyone to use.
+
+Outside of coding, I have a big passion for music, photography, and entrepreneurship. Whether I’m capturing the perfect shot, vibing to good music, or working on fresh ideas, I’m always looking for ways to grow and create something meaningful.
         </p>
       </section>
 
