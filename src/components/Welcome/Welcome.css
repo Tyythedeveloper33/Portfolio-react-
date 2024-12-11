@@ -1,68 +1,96 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  }
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  color: white;
+}
 
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: black; /* Light background for the entire site */
-    color: white;
-  }
-
-  /* Welcome Section */
-  /* Welcome Section */
+/* Welcome Section */
 .welcome-container {
-    height: 70vh; /* Full screen height */
-    width: 70vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(135deg, white, white); /* Gradient background */
-    color: black;
-    padding: 20px;
-    border: 5px solid black; /* Add black border */
-    border-radius: 12px; /* Optional: rounding corners */
-  }
+  height: 70vh;
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, white, white);
+  color: black;
+  padding: 20px;
+  border: 5px solid black;
+  border-radius: 12px;
 
+}
+
+/* Content Styling */
+.welcome-content {
+  max-width: 800px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.welcome-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.welcome-content p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn-explore {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #1e90ff;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-explore:hover {
+  background-color: #005cbf;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-container {
+    height: auto;
+    width: 90vw;
+    padding: 10px;
+    margin-left: -10px;
+
+  }
 
   .welcome-content {
-    max-width: 800px;
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
   }
 
   .welcome-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 2rem;
   }
 
   .welcome-content p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    font-size: 1rem;
   }
 
   .btn-explore {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    color: white;
-    background-color: #1e90ff; /* Coral color */
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
+    padding: 10px 20px;
+    font-size: 1rem;
   }
-
-  .btn-explore:hover {
-    background-color: #1e90ff; /* Deeper coral for hover */
-    transform: scale(1.1); /* Slight zoom effect */
-  }
+}

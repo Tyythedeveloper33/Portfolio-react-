@@ -18,6 +18,12 @@ const projects = [
 
 const futureProjects = [
   {
+    title: 'DonorsFlow',
+    description: 'A project showcasing my skills in full-stack development with React. (In Progress)',
+    image: 'DonorsFlow.webp',
+    link: 'https://example.com/project2',
+  },
+  {
     title: 'Space Continuum',
     description: 'A project showcasing my skills in front-end development with React. (In Progress)',
     image: 'Space-continuum.png',

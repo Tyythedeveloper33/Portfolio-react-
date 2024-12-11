@@ -1,5 +1,6 @@
 import './Welcome.css';
 import { NavLink } from 'react-router-dom';
+
 export default function Welcome() {
   return (
     <div className="welcome-container">
