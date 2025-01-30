@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './App.css';
+// import './Layout.css';
 import { Outlet } from 'react-router-dom';
 
 // Import components
@@ -13,13 +13,18 @@ import Footer from './components/Footer';
 
 // Layout component that includes the Navigation
 function Layout() {
-  return (
-    <div>
-      <Navigation />
-      <Outlet /> {/* This renders the nested route's component */}
-      <Footer/>
 
-    </div>
+    return (
+      <div>
+        <Navigation />
+        <main>
+          <Outlet /> {/* This renders the nested route's component */}
+        </main>
+        <Footer />
+      </div>
+
+
+
   );
 }
 

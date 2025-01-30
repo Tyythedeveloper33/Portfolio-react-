@@ -1,14 +1,25 @@
-import './Welcome.css';
-import { NavLink } from 'react-router-dom';
+import "./Welcome.css";
+import { NavLink } from "react-router-dom";
 
-export default function Welcome() {
+function Welcome() {
   return (
-    <div className="welcome-container">
-      <div className="welcome-content">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi! I’m a passionate developer creating web experiences that inspire.</p>
-        <NavLink to="/portfolio" className="btn-explore">Explore My Work</NavLink>
+    <section className="hero">
+      <div className="hero-content">
+        <h1 className="hero-heading">Crafting Digital Experiences</h1>
+        <p className="hero-subheading">
+          Hi! I’m a passionate developer dedicated to building engaging and impactful web applications.
+        </p>
+        <div className="cta-container">
+          <NavLink to="/contact">
+            <button className="cta-button">Let's Connect</button>
+          </NavLink>
+        </div>
       </div>
-    </div>
+      <div className="hero-image">
+        {/* Optional: Add an image or illustration of your work */}
+      </div>
+    </section>
   );
 }
+
+export default Welcome;

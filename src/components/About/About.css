@@ -14,7 +14,9 @@ body {
 
 /* About Container */
 .about-container {
-    max-width: 1200px;
+
+    max-width: 1000px;
+    max-height: 1900px;
     margin: 50px auto;
     padding: 30px;
     background-color: #fff;
@@ -48,12 +50,13 @@ body {
     align-items: center;
     gap: 30px;
     margin-bottom: 40px;
+    margin-top:40px ;
 }
 
 /* About Image */
 .about-image {
     max-width: 250px;
-    border-radius: 50%; /* Circular image */
+    /* Circular image */
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }

@@ -4,13 +4,13 @@ import './Portfolio.css';
 const projects = [
   {
     title: 'EduBnB',
-    description: 'A description of the project, the technologies used, and its functionality.',
+    description: "EduBnb is a platform that allows users to book rental places, list new spots, and leave reviews for their stays. It's a convenient way to find and share lodging options while building a community of travelers. The tech stack used for the project includes MongoDB, Express, React, and Redux.",
     image: 'Edubnb.png',
     link: 'https://grounded-project.onrender.com/',
   },
   {
     title: 'UFree',
-    description: 'A full-stack application I built with Node.js, Express, and MongoDB.',
+    description: ' event planning platform that simplifies scheduling by using an algorithm to find the perfect time for everyone based on their availability. Users can send invite codes to others to collect availability, create or delete events, and manage invitations. The tech stack includes MongoDB, Express, React, and Redux.',
     image: 'ufree.png',
     link: 'https://ufree-f24a66c626ea.herokuapp.com/',
   },
@@ -19,20 +19,20 @@ const projects = [
 const futureProjects = [
   {
     title: 'DonorsFlow',
-    description: 'A project showcasing my skills in full-stack development with React. (In Progress)',
+    description: "This project focuses on creating a seamless donation platform that connects donors with impactful causes. Built using Python for the backend, React and Redux for dynamic front-end experiences, and PostgreSQL for efficient data management. (In Development)",
     image: 'DonorsFlow.webp',
     link: 'https://example.com/project2',
   },
   {
-    title: 'Space Continuum',
-    description: 'A project showcasing my skills in front-end development with React. (In Progress)',
-    image: 'Space-continuum.png',
+    title: 'Amerind Nation',
+    description: "Amerind Nation is a project focused on providing Native American communities with the energy infrastructure and knowledge needed for long-term stability. It uses Python for the backend, React and Redux for a dynamic front-end, and PostgreSQL(In Development)",
+    image: 'Amerind.webp',
     link: 'https://example.com/project2',
   },
   {
-    title: 'Ghost Walker',
-    description: 'An upcoming e-commerce store for clothing. (In Development)',
-    image: 'GhostWalker.webp', // Replace with the actual image for this project
+    title: 'SiteMagnet',
+    description: 'SiteMagnet is a funnel website designed to help clients build lead-converting sites that scale their business, featuring a built-in dashboard for easy management. Using Python, PostgreSQL, React, and Redux, it offers a seamless and scalable solution for businesses looking to grow.(In Development)',
+    image: 'Sitemagnet.webp', // Replace with the actual image for this project
     link: 'https://example.com/project3',
   },
 ];

@@ -1,111 +1,86 @@
-/* Reset any body or container padding/margin that might cause issues */
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-/* Footer container styles */
-.footer-container {
-  background-color: #333;  /* Dark background */
-  color: white;  /* Light text color */
-  padding: 20px;
-  width: 100%;  /* Ensures full width of the viewport */
-  text-align: center;
-  box-sizing: border-box; /* Ensures padding doesn't affect the layout */
-  margin-top: 40px; /* Space from content above */
+/* Overall footer container */
+.footer {
+  background-color: #222;  /* Dark background color */
+  color: white;  /* White text color */
+  padding: 30px 0;
+  width: 100vw;  /* Full width */
+  box-sizing: border-box;  /* Prevents padding from affecting the width */
+  margin-top: 80px;  /* Adds space above the footer */
+  display: flex;
+  justify-content: center;  /* Centers content horizontally */
   position: relative;
-  overflow: hidden; /* Prevents any overflow */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 5px;
+  overflow: hidden;
+  /* left: -110px;
+  bottom: -190px; */
+  /* align-self: baseline; */
+  text-align: bottom;
 }
 
-/* Footer content (social icons and contact info) */
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  width: 100%;  /* Ensures content is fully aligned with the footer */
+/* Wrapper to limit max width of content */
+.footer-wrapper {
+  max-width: 1200px;  /* Maximum width of footer content */
+  width: 100%;
+  margin: 0 auto;  /* Centers content horizontally */
 }
 
-/* Social icons section */
-.social-icons {
+/* Social media section */
+.social-media {
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
+  justify-content: center;  /* Centers the social icons */
+  gap: 25px;  /* Adds space between social media icons */
+  margin-bottom: 20px;  /* Adds space below the icons */
 }
 
-/* Social media icons */
-.social-icons img {
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
+/* Individual social media links */
+.social-link {
+  display: inline-block;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Hover effect for social media icons */
-.social-icons img:hover {
-  transform: scale(1.1);  /* Slightly enlarges the icons */
-  opacity: 0.8;  /* Slight opacity change */
+.social-link:hover .social-icon {
+  transform: scale(1.1);  /* Slightly enlarges the icons on hover */
+  opacity: 0.8;  /* Reduces opacity on hover */
 }
 
-/* Contact info section */
-.contact-info {
-  font-size: 16px;
+/* Social media icon styling */
+.social-icon {
+  width: 40px;  /* Width of the icon */
+  height: 40px;  /* Height of the icon */
+  object-fit: cover;  /* Makes sure the icon is contained within the box */
+  transition: all 0.3s ease;  /* Smooth transition on hover */
+}
+
+/* Contact details section */
+.contact-details {
+  font-size: 16px;  /* Font size for contact details */
   text-align: center;
 }
 
-.contact-info p {
-  margin: 5px 0;
+/* Individual contact info styling */
+.contact-info {
+  margin: 8px 0;  /* Adds space between contact details */
 }
 
-/* Link styles */
-.link {
-  text-decoration: none;
-  color: inherit;  /* Inherit the color of the parent */
-}
-
-.link:hover {
-  opacity: 0.8;
-}
-
-/* Responsive Design for smaller screens */
+/* Responsiveness for smaller screens */
 @media (max-width: 768px) {
-  .footer-container {
-    padding: 15px;  /* Adjust padding for smaller screens */
+  .footer {
+    padding: 20px 0;  /* Adjust padding on smaller screens */
   }
 
-  .footer-content {
-    flex-direction: column;  /* Stack content vertically on smaller screens */
-    gap: 10px;  /* Reduce gap between sections */
+  .footer-wrapper {
+    padding: 0 15px;  /* Adds some padding on the left and right for small screens */
   }
 
-  .social-icons {
-    gap: 15px;  /* Reduce gap between social icons */
+  .contact-details {
+    font-size: 14px;  /* Smaller text for contact info on small screens */
   }
 
-  .contact-info {
-    font-size: 14px;  /* Smaller text for contact info on smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-container {
-    padding: 10px;  /* Further reduce padding on very small screens */
+  .social-media {
+    gap: 15px;  /* Reduces the gap between icons on smaller screens */
   }
 
-  .social-icons img {
-    width: 30px;  /* Smaller social icons on very small screens */
-    height: 30px;
-  }
-
-  .contact-info {
-    font-size: 12px;  /* Smaller font size for contact info */
+  .social-icon {
+    width: 35px;  /* Smaller social icons */
+    height: 35px;
   }
 }
