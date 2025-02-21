@@ -13,7 +13,12 @@ const projects = [
     description: ' event planning platform that simplifies scheduling by using an algorithm to find the perfect time for everyone based on their availability. Users can send invite codes to others to collect availability, create or delete events, and manage invitations. The tech stack includes MongoDB, Express, React, and Redux.',
     image: 'ufree.png',
     link: 'https://ufree-f24a66c626ea.herokuapp.com/',
-  },
+  },{
+    title: 'Amerind Nation',
+    description: "Amerind Nation is a project focused on providing Native American communities with the energy infrastructure and knowledge needed for long-term stability. It uses Python for the backend, React and Redux for a dynamic front-end, and PostgreSQL(In Development)",
+    image: 'Amerind.webp',
+    link: 'https://amerindnation.com/',
+  }
 ];
 
 const futureProjects = [
@@ -21,12 +26,6 @@ const futureProjects = [
     title: 'DonorsFlow',
     description: "This project focuses on creating a seamless donation platform that connects donors with impactful causes. Built using Python for the backend, React and Redux for dynamic front-end experiences, and PostgreSQL for efficient data management. (In Development)",
     image: 'DonorsFlow.webp',
-    link: 'https://example.com/project2',
-  },
-  {
-    title: 'Amerind Nation',
-    description: "Amerind Nation is a project focused on providing Native American communities with the energy infrastructure and knowledge needed for long-term stability. It uses Python for the backend, React and Redux for a dynamic front-end, and PostgreSQL(In Development)",
-    image: 'Amerind.webp',
     link: 'https://example.com/project2',
   },
   {

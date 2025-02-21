@@ -74,6 +74,7 @@ Outside of coding, I have a big passion for music, photography, and entrepreneur
           </div>
 
           <NavLink to='/contact' className='btn-contact'>Let's Connect</NavLink>
+          <a href="/Portfolio-react-/resume.pdf" download className='btn-download'>Download Resume</a>
         </div>
       </section>
 
