@@ -18,7 +18,13 @@ const projects = [
     description: "Amerind Nation is a project focused on providing Native American communities with the energy infrastructure and knowledge needed for long-term stability. It uses Python for the backend, React and Redux for a dynamic front-end, and PostgreSQL(In Development)",
     image: 'Amerind.webp',
     link: 'https://amerindnation.com/',
-  }
+  },
+  {
+    title: 'SiteMagnet',
+    description: 'SiteMagnet is a funnel website designed to help clients build lead-converting sites that scale their business, featuring a built-in dashboard for easy management. Using Python, PostgreSQL, React, and Redux, it offers a seamless and scalable solution for businesses looking to grow.(In Development)',
+    image: 'Sitemagnet.webp', // Replace with the actual image for this project
+    link: 'https://sales-funnel-cbig.onrender.com',
+  },
 ];
 
 const futureProjects = [
@@ -27,13 +33,8 @@ const futureProjects = [
     description: "This project focuses on creating a seamless donation platform that connects donors with impactful causes. Built using Python for the backend, React and Redux for dynamic front-end experiences, and PostgreSQL for efficient data management. (In Development)",
     image: 'DonorsFlow.webp',
     link: 'https://example.com/project2',
-  },
-  {
-    title: 'SiteMagnet',
-    description: 'SiteMagnet is a funnel website designed to help clients build lead-converting sites that scale their business, featuring a built-in dashboard for easy management. Using Python, PostgreSQL, React, and Redux, it offers a seamless and scalable solution for businesses looking to grow.(In Development)',
-    image: 'Sitemagnet.webp', // Replace with the actual image for this project
-    link: 'https://example.com/project3',
-  },
+  }
+
 ];
 
 export default function Portfolio() {
